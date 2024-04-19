@@ -1,6 +1,8 @@
 module.exports =
   {
-    extends: 'standard',
+    extends: [
+      require.resolve('/opt/homebrew/lib/node_modules/eslint-config-standard')
+    ],
 
     parserOptions: {
       ecmaVersion: 2023
@@ -26,5 +28,5 @@ module.exports =
       'no-var': 2,
       'function-paren-newline': [2, 'multiline']
     },
-    ignores: ['node_modules/*', 'dist/*', 'coverage/*', 'build/*']
+    ignorePatterns: ['node_modules/*', 'dist/*', 'coverage/*', 'build/*']
   };
