@@ -26,7 +26,11 @@ module.exports =
         }
       ],
       'no-var': 2,
-      'function-paren-newline': [2, 'multiline']
+      'function-paren-newline': [2, 'consistent'],
+      'object-curly-newline': [2, { multiline: true, consistent: true }],
+      'array-bracket-newline': [2, { multiline: true }],
+      'array-element-newline': [2, 'consistent']
+
     },
     ignorePatterns: ['node_modules/*', 'dist/*', 'coverage/*', 'build/*']
   };
